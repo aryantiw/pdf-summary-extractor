@@ -58,7 +58,7 @@ from transformers import pipeline
 import pdfplumber
 
 # Initialize the summarizer
-summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+summarizer = pipeline("summarization", model="t5-small")
 
 def extract_text_from_pdf(pdf_file):
     """Extract text from an uploaded PDF file using pdfplumber."""
